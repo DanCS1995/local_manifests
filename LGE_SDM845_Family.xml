@@ -4,7 +4,7 @@
   <!-- 1. REMOTES -->
   <remote name="DanCS1995"
           fetch="https://github.com/"
-          revision="lineage-23.2" /> <!-- Ou o branch que você estiver compilando -->
+          revision="16.0_qpr2" /> <!-- Ou o branch que você estiver compilando -->
 
   <!-- 2. Removing projects if already existing -->
   <remove-project path="kernel/lge/sdm845" />
