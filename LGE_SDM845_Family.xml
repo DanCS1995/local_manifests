@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- 1. REMOTES -->
+  <remote name="DanCS1995"
+          fetch="https://github.com/"
+          revision="lineage-23.2" /> <!-- Ou o branch que você estiver compilando -->
+
+  <!-- 2. Removing projects if already existing -->
+  <remove-project path="kernel/lge/sdm845" />
+  <remove-project path="device/lge/sdm845-common" />
+  <remove-project path="vendor/lge/sdm845-common" />
+  <remove-project path="hardware/lge" />
+  <remove-project path="device/lge/judyln-common" />
+  <remove-project path="vendor/lge/judyln-common" />
+  <remove-project path="device/lge/judyln" />
+  <remove-project path="vendor/lge/judyln" />
+  <remove-project path="device/lge/judyp" />
+  <remove-project path="vendor/lge/judyp" />
+  <remove-project path="device/lge/judypn" />
+  <remove-project path="vendor/lge/judypn" />
+
+  <!-- ==================================================== -->
+  <!-- 3. COMMON REPOS (Shared by the three devices)   -->
+  <!-- ==================================================== -->
+  
+  <!-- Kernel -->
+  <project path="kernel/lge/sdm845" 
+           name="DanCS1995/android_kernel_lge_sdm845" 
+           remote="DanCS1995" />
+
+  <!-- Device -->
+  <project path="device/lge/sdm845-common" 
+           name="DanCS1995/android_device_lge_sdm845-common" 
+           remote="DanCS1995" />
+
+  <!-- Vendor -->
+  <project path="vendor/lge/sdm845-common" 
+           name="DanCS1995/proprietary_vendor_lge_sdm845-common" 
+           remote="DanCS1995" />
+
+  <!-- Hals -->
+  <project path="hardware/lge" 
+           name="DanCS1995/android_hardware_lge" 
+           remote="DanCS1995" />  
+
+
+  <!-- ==================================================== -->
+  <!-- 4. LG G7 (judyln Family) - SPECIFIC REPOS                   -->
+  <!-- ==================================================== -->
+  <project path="device/lge/judyln-common" 
+           name="DanCS1995/android_device_lge_judyln-common" 
+           remote="DanCS1995" />
+
+  <project path="vendor/lge/judyln-common" 
+           name="DanCS1995/proprietary_vendor_lge_judyln-common" 
+           remote="DanCS1995" />
+  
+    <project path="device/lge/judyln" 
+           name="DanCS1995/android_device_lge_judyln" 
+           remote="DanCS1995" />
+
+  <project path="vendor/lge/judyln" 
+           name="DanCS1995/proprietary_vendor_lge_judyln" 
+           remote="DanCS1995" />
+
+
+  <!-- ==================================================== -->
+  <!-- 5. LG V35 (judyp) - SPECIFIC REPOS                   -->
+  <!-- ==================================================== -->
+  <project path="device/lge/judyp" 
+           name="DanCS1995/android_device_lge_judyp" 
+           remote="DanCS1995" />
+
+  <project path="vendor/lge/judyp" 
+           name="DanCS1995/proprietary_vendor_lge_judyp" 
+           remote="DanCS1995" />
+
+
+  <!-- ==================================================== -->
+  <!-- 6. LG V40 (judypn) - SPECIFIC REPOS                  -->
+  <!-- ==================================================== -->
+  <project path="device/lge/judypn" 
+           name="DanCS1995/android_device_lge_judypn" 
+           remote="DanCS1995" />
+
+  <project path="vendor/lge/judypn" 
+           name="DanCS1995/proprietary_vendor_lge_judypn" 
+           remote="DanCS1995" />
+
+</manifest>
