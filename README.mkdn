@@ -19,9 +19,9 @@ Run this command in the root of your source tree:
 ```
 
 ### Step 2: Download the XML directly from the specific branch
-Example for the LG SDM845 (G7 / V35 / V40) platform on LineageOS 23.2:
+Example for the LG SDM845 (G7 / V35 / V40) platform on LineageOS 21.0:
 ```bash
-    curl -L -o .repo/local_manifests/LGE_SDM845_Family.xml https://raw.githubusercontent.com/DanCS1995/local_manifests/lge_sdm845_lineage-23.2/LGE_SDM845_Family.xml
+    curl -L -o .repo/local_manifests/LGE_SDM845_Family.xml https://raw.githubusercontent.com/DanCS1995/local_manifests/lge_sdm845_lineage-21.0/LGE_SDM845_Family.xml
 ```
 
 ### Step 3: Synchronize Source Trees
