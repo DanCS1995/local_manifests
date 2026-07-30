@@ -6,20 +6,6 @@
           fetch="https://github.com/"
           revision="lineage-23.2" /> <!-- Ou o branch que você estiver compilando -->
 
-  <!-- 2. Removing projects if already existing -->
-  <remove-project path="kernel/lge/sdm845" />
-  <remove-project path="device/lge/sdm845-common" />
-  <remove-project path="vendor/lge/sdm845-common" />
-  <remove-project path="hardware/lge" />
-  <remove-project path="device/lge/judyln-common" />
-  <remove-project path="vendor/lge/judyln-common" />
-  <remove-project path="device/lge/judyln" />
-  <remove-project path="vendor/lge/judyln" />
-  <remove-project path="device/lge/judyp" />
-  <remove-project path="vendor/lge/judyp" />
-  <remove-project path="device/lge/judypn" />
-  <remove-project path="vendor/lge/judypn" />
-
   <!-- ==================================================== -->
   <!-- 3. COMMON REPOS (Shared by the three devices)   -->
   <!-- ==================================================== -->
