@@ -4,7 +4,7 @@
   <!-- 1. REMOTES -->
   <remote name="DanCS1995"
           fetch="https://github.com/"
-          revision="lineage-23.2" /> <!-- Ou o branch que você estiver compilando -->
+          revision="seventeen-cnb-evox" /> <!-- Ou o branch que você estiver compilando -->
 
   <!-- ==================================================== -->
   <!-- 3. COMMON REPOS (Shared by the three devices)   -->
