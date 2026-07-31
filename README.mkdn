@@ -24,7 +24,13 @@ Example for the LG SDM845 (G7 / V35 / V40) platform on EvolutionX 12:
     curl -L -o .repo/local_manifests/LGE_SDM845_Family.xml https://raw.githubusercontent.com/DanCS1995/local_manifests/lge_sdm845_seventeen-cnb-evox/LGE_SDM845_Family.xml
 ```
 
-### Step 3: Synchronize Source Trees
+### Step 3: Download the Lineage SDM845 Hals Manifest
+This file re-tracks all the SDM845 Hals that were droped temporarily:
+```bash
+    curl -L -o .repo/local_manifests/LGE_SDM845_Lineage_Hals.xml https://raw.githubusercontent.com/DanCS1995/local_manifests/lge_sdm845_seventeen-cnb-evox/LGE_SDM845_Lineage_Hals.xml
+```
+
+### Step 4: Synchronize Source Trees
 Once the local manifest is in place, trigger repo sync to clean up conflicting default projects and fetch the custom repositories:
 ```bash
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
