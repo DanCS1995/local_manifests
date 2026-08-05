@@ -31,8 +31,7 @@ This file re-tracks all the SDM845 Hals that were droped temporarily:
 ```
 
 ### Step 4: Add "os_pickup_qssi.bp for SDM845" line into manifest
-• Open the ".repo/manifest/snippets/lineage.xml" file,
-• Locate the "<linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />" line(92), and add this line bellow and save the file:
+Open the ".repo/manifest/snippets/lineage.xml" file. Locate the  line(92) "linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp", and add this line bellow and save the file:
 ```bash
  <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
 ```
