@@ -30,7 +30,14 @@ This file re-tracks all the SDM845 Hals that were droped temporarily:
     curl -L -o .repo/local_manifests/LGE_SDM845_Lineage_Hals.xml https://raw.githubusercontent.com/DanCS1995/local_manifests/lge_sdm845_seventeen-cnb-evox/LGE_SDM845_Lineage_Hals.xml
 ```
 
-### Step 4: Synchronize Source Trees
+### Step 4: Add "os_pickup_qssi.bp for SDM845" line into manifest
+• Open the ".repo/manifest/snippets/lineage.xml" file,
+• Locate the "<linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />" line(92), and add this line bellow and save the file:
+```bash
+ <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+```
+
+### Step 5: Synchronize Source Trees
 Once the local manifest is in place, trigger repo sync to clean up conflicting default projects and fetch the custom repositories:
 ```bash
     repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
